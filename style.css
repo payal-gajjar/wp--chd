@@ -1,0 +1,419 @@
+/*
+Theme Name: Twenty Twenty child
+Text Domain: twentytwenty-child
+Template: twentytwenty
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-size: 14px;
+  color: #000000;
+  line-height: 1.4;
+   font-family: 'Roboto', sans-serif;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#site-header {
+    padding: 25px 0;
+    border-bottom: 1px solid #ffeb33;
+}
+.primary-menu-wrapper li:hover,.primary-menu-wrapper li.current-menu-item{
+    border: 1px solid #ffeb33 !important;
+   padding: 12px 21px;
+}
+.primary-menu-wrapper .primary-menu > li {
+    margin: 0;
+    border: 1px solid #ff000000;
+    padding: 12px 21px;
+}
+.primary-menu-wrapper ul.primary-menu {
+    margin: 0px !important;
+}
+.primary-menu-wrapper li a:hover ,.primary-menu-wrapper li a:active ,.primary-menu-wrapper .primary-menu a{
+  text-decoration: none!important;
+}
+.primary-menu-wrapper li a {
+    font-size: 15px;
+    color: #131316 !important;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+#about-us-area ,#portfolio-area{
+    display: inline-block;
+    text-align: center;
+    padding: 120px 0 160px 0;
+}
+#about-us-area .about-title h2,.our-client-work .title-content h2,.contact-us h2 ,.portfolio-area h2{
+  font-size: 25px;
+  line-height: 35px;
+  color:#131316;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+#about-us-area .about-title p ,.our-client-work .title-content p,.contact-us p ,.portfolio-area .port-title p{
+  font-size: 15px;
+  line-height: 25px;
+  color:#eaeaea;
+  padding: 0 0 100px 0;
+  text-transform: uppercase;
+}
+.about-box .sub-title {
+    color: #8e8e8e;
+    font-size: 15px;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+.about-box .title {
+    color: #131316;
+    font-size: 15px;
+    padding-bottom: 30px;
+}
+.about-box span {
+    font-size: 25px;
+    color: #eaeaea;
+    padding-right: 20px;
+    vertical-align: middle;
+    position: relative;
+}
+.about-box span:after {
+    content: '';
+    width: 2px;
+    height: 30px;
+    color: #eaeaea;
+    position: absolute;
+    left: 37px;
+    top: 2px;
+    background: #eaeaea;
+}
+.port-box .title {
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+    text-transform: uppercase;
+}
+.port-box .sub-title{
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.port-box {
+  
+    margin-bottom: 20px;
+    position: relative;
+}
+.port-box:hover:after {
+    content: "";
+    background: rgb(255 235 51 / 66%);
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    transition: all .5s ease;
+    opacity: 1;
+}
+.port-box:hover .p-content{
+  opacity: 1;
+  z-index: 999;
+}
+.port-box .p-content {
+    position: absolute;
+    top: 37%;
+    left: 22%;
+    opacity: 0;
+}
+.port-box:hover .p-content p{
+  color:#fff !important;
+}
+.port-more p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #eaeaea;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.logo-slider .slick-slide {
+   height: 100px;
+}
+
+.cta-box {
+    text-align: center;
+}
+.cta-box .title {
+    font-style: italic;
+    font-size: 25px;
+    line-height: 40px;
+    color: #131316;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+.cta-box .sub-title {
+    font-size: 15px;
+    line-height: 30px;
+    color: #ffffff;
+}
+#cta-area {
+  background:#ffeb33;
+  padding:150px 0;
+}
+#our-client-work {
+    background: #424245;
+    padding: 140px 0;
+}
+.logo-slider img{
+  margin: 0 auto;
+}
+.contact-us{
+    padding: 140px 0;
+}
+.contact-form input , .contact-form textarea {
+    font-size: 15px;
+    line-height: 23px;
+    background: yellow;  
+    margin-bottom: 20px;
+    border-color: #eaeaea;
+}
+.contact-form input::placeholder, .contact-form textarea::placeholder{
+  color:#fff;
+}
+.contact-form input {
+   height: 50px;
+}
+.contact-form .wpcf7-form-control.wpcf7-submit.cntbtn {
+    width: 100%;
+color: #eaeaea;
+    background: #131316;
+}
+.contact-form {
+    width: 80%;
+    margin: 0 auto;
+}
+#site-footer {
+    background: #131316;
+    padding: 40px 0;
+}
+#site-footer ul.social-menu{
+    display: flex;
+    justify-content: flex-end;
+}
+.copyright {
+    font-size: 15px;
+    line-height: 23px;
+    color: #eaeaea;
+}
+.social-menu ul li {
+    margin: 0 0 14px;
+    line-height: 1.35;
+    font-weight: 400;
+    font-size: 15px;
+    list-style: initial;
+    margin-left: 15px;
+    color: #fff;
+}
+.social-menu li{
+    display: inline-flex;
+    margin-left: 0px !important;
+}
+.social-menu li a:before {
+    font: normal normal normal 16px/1 FontAwesome;
+    
+    display: inline-block;
+}
+.social-menu li a{
+    text-decoration: none;
+    font-size: 0;
+    padding: 5px 16px;
+    color:#fff;
+}
+.social-menu li a:hover{
+   color: #eaeaea;
+}
+.fb-class a:before{
+  content: "\f09a";
+}
+.twi-class a:before{
+      content: "\f099";
+}
+.dri-class a:before{
+    content: "\f17d";
+}
+.gg-class a:before{
+    content: "\f0d5";
+}
+.yb-class a:before{
+      content: "\f167";
+}
+#hero-area {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+.hero-box {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero-box .title {
+    font-size: 24px;
+    line-height: 40px;
+    color: #fff;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.hero-box img {
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+}
+.hero-box .sub-title{
+    font-size: 45px;
+    line-height: 60px;
+    color: #ffeb33;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.hero-box a {
+    font-size: 15px;
+    color: #ffffff !important;
+    text-transform: uppercase;
+    line-height: 30px;
+    text-decoration: none;
+}
+.hero-box .button {
+    margin: 0;
+    border: 1px solid #eaeaea;
+    padding: 12px 21px;
+    background: transparent;
+}
+.hero-box .arrow {
+    padding: 30px 0;
+}
+.loadmores{
+    margin: 0 auto;
+    display: inline-block;
+    padding: 20px 0 0 0;
+    cursor: pointer;
+}
+
+/* humberg menu */
+
+.hamburger-menu {
+position: relative;
+    width: 24px;
+    height: 22px;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+ 
+}
+.hamburger-menu span:nth-child(1) {
+    top: 2px;
+}
+.hamburger-menu span:nth-child(2), .hamburger-menu span:nth-child(3) {
+    top: 10px;
+}
+.hamburger-menu span:nth-child(4) {
+    top: 18px;
+}
+.hamburger-menu span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+      background: #000000;
+    border-radius: 10px;
+    opacity: 1;
+    left: 0;
+    transition: .25s ease-in-out;
+}
+
+.site-navigation.show ul {
+    left: 0;
+}
+.site-navigation ul {
+    position: fixed;
+    top: 0;
+    left: -320px;
+    z-index: 9999;
+    width: 320px;
+    max-width: calc(100% - 120px);
+    height: 100%;
+    padding: 30px 15px;
+    margin: 0;
+    background: rgb(52, 53, 57);
+    list-style: none;
+    overflow-x: scroll;
+    transition: all 0.35s;
+}
+.site-navigation ul li {
+    margin: 0 16px;
+}
+.site-navigation ul li a:hover, .site-navigation ul li.current-menu-item a {
+    color: #ff5a00;
+}
+.site-navigation ul li a {
+    display: block;
+    padding: 16px 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    color: #fafafa;
+    text-decoration: none;
+    transition: color .35s;
+}
+.hamburger-menu.open span:nth-child(1) {
+    top: 18px;
+    width: 0;
+    left: 50%;
+}
+.hamburger-menu.open span:nth-child(2) {
+    transform: rotate(45deg);
+}
+.hamburger-menu.open span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+.hamburger-menu.open span:nth-child(4) {
+    top: 18px;
+    width: 0;
+    left: 50%;
+}
